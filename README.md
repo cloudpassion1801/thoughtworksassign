@@ -18,8 +18,8 @@ a) Quick Run Locally
 
 b) CI/ CD process  
 
-I can also see some challenges on Scaling of this mediawiki app . Which are mentioned [over here](https://github.com/anurag4517/assignment#scaling-challenges-for-mediawiki).  
-I have assumed minimal configurations of mediawiki app , there can also be certain security enhancements which are mentioned [over here](https://github.com/anurag4517/assignment#security-enhancements)  
+I can also see some challenges on Scaling of this mediawiki app . Which are mentioned [over here](https://github.com/cloudpassion1801/assignment#scaling-challenges-for-mediawiki).  
+I have assumed minimal configurations of mediawiki app , there can also be certain security enhancements which are mentioned [over here](https://github.com/cloudpassion1801/assignment#security-enhancements)  
 ### Quick run Locally
 Step 1 : Ensure that you have full filled prerequisite .
 Step 2:  Clone this project locally  
@@ -75,7 +75,7 @@ Once this succeeds you can view mediawiki running n http://{ip_address} , where 
 
 a) Should have a valid Azure account and subscriptions & Install Azure cli . You can view documetation [here](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret) .  
 
-b) Should have created a SP(Servic principle) in Azure with Contributor Access to help terraform create resources . You can find details [here](https://github.com/anurag4517/assignment#code-for-creating-sp-for-azure) . 
+b) Should have created a SP(Servic principle) in Azure with Contributor Access to help terraform create resources . You can find details [here](https://github.com/cloudpassion1801/assignment#code-for-creating-sp-for-azure) . 
 
 c) Docker should be installed locally on system.  
 
@@ -87,15 +87,15 @@ On PR merge the code in default branch is deployed on Prod environment .  (Ensur
 In our case for demo purpose we are destroying code in stagging after merge as we want to save money .(But this is not ideal)
 As this is demo so we are using same subscription for both prod and stagging . Every prod environment resource woukd be appended with prod prefix to identify correctly
 
-Step 1 : Ensure that you have full filled [CI/CD prerequisite](https://github.com/anurag4517/assignment#entire-cicd-prerequisite) .  
+Step 1 : Ensure that you have full filled [CI/CD prerequisite](https://github.com/cloudpassion1801/assignment#entire-cicd-prerequisite) .  
 
-Step 2 : [Run Jenkins Server Locally](https://github.com/anurag4517/assignment#step-1--run-jenkins-server-locally-via-following-command) . Ideally we should have a Jenkins CI server running where we would configure our job , but here we are running it locally via docker container .
+Step 2 : [Run Jenkins Server Locally](https://github.com/cloudpassion1801/assignment#step-1--run-jenkins-server-locally-via-following-command) . Ideally we should have a Jenkins CI server running where we would configure our job , but here we are running it locally via docker container .
 
-Step 3 : [Configure Jenkins credentiails](https://github.com/anurag4517/assignment#configure-your-jenkins-credentials) .  
+Step 3 : [Configure Jenkins credentiails](https://github.com/cloudpassion1801/assignment#configure-your-jenkins-credentials) .  
 
-Step 4 : [Create a PR to deploy infra to stagging environment](https://github.com/anurag4517/assignment#create-a-pr-to-deploy-infra-to-stagging-environment)  
+Step 4 : [Create a PR to deploy infra to stagging environment](https://github.com/cloudpassion1801/assignment#create-a-pr-to-deploy-infra-to-stagging-environment)  
 
-Step 5 : [Validate app in stagging environment](https://github.com/anurag4517/assignment#create-a-pr-to-deploy-infra-to-stagging-environment) and once validated merge PR to main to deploy it to prod  
+Step 5 : [Validate app in stagging environment](https://github.com/cloudpassion1801/assignment#create-a-pr-to-deploy-infra-to-stagging-environment) and once validated merge PR to main to deploy it to prod  
 
 Step 6 : Validate app in prod environment.  
 
@@ -108,7 +108,7 @@ For complete CI/CD examination you need to have below things
 
 a) Should have a valid Azure account and subscriptions & Install Azure cli . You can view documetation [here](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret) .  
 
-b) Should have created a SP(Servic principle) in Azure with Contributor Access to help terraform create resources . You can find details [here](https://github.com/anurag4517/assignment#code-for-creating-sp-for-azure) . 
+b) Should have created a SP(Servic principle) in Azure with Contributor Access to help terraform create resources . You can find details [here](https://github.com/cloudpassion1801/assignment#code-for-creating-sp-for-azure) . 
 
 c) Docker should be installed locally on system.  
 
